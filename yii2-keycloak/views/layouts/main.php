@@ -24,7 +24,48 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->title) ?></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    
     <?php $this->head() ?>
+    <style>
+    body {
+        background: linear-gradient(to right, #383838, #0f0f0f);
+        min-height: 100vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+    }
+    .btn-glass {
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 12px;
+        width: 100%;
+        border-radius: 50px;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+    .btn-glass:hover {
+        background: rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+    }
+    .file-info {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 10px;
+        display: inline-block;
+        margin-top: 10px;
+        color: #fff;
+    }
+    code {
+        color: #fff;
+        word-wrap: break-word;
+    }
+</style>
 </head>
 <body class="d-flex flex-column h-100">
 <?php $this->beginBody() ?>
@@ -68,14 +109,6 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </div>
 </main>
 
-<footer id="footer" class="mt-auto py-3 bg-light">
-    <div class="container">
-        <div class="row text-muted">
-            <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-            <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
-        </div>
-    </div>
-</footer>
 
 <?php $this->endBody() ?>
 </body>

@@ -55,6 +55,15 @@ class SiteController extends Controller
         return $this->redirect($profileUrl);
     }
 
+    public function actionAbout()
+    {
+        return $this->render('about');
+    }
+    public function actionContact()
+    {
+        return $this->render('contact');
+    }
+
     public function actionLogout()
     {
         $user = Yii::$app->session->get('user');
