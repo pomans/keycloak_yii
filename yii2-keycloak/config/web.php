@@ -2,6 +2,10 @@
 return [
     'id' => 'yii2-keycloak-app', // เพิ่มตรงนี้ให้ถูกต้อง
     'basePath' => dirname(__DIR__),
+    'name' => 'Yii2 TCEB SSO App', // เพิ่มตรงนี้
+    'language' => 'en',
+    'bootstrap' => ['log'],
+    'modules' => [],
     'aliases' => [
         '@bower' => '@vendor/npm-asset',
         '@npm'   => '@vendor/npm-asset',

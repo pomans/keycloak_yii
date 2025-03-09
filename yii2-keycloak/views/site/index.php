@@ -8,7 +8,7 @@ use yii\helpers\Html;
         background: rgba(255, 255, 255, 0.15);
         border-radius: 16px;
         padding: 40px;
-        width: 450px;
+        width:500px;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.3);
     }
@@ -32,7 +32,7 @@ use yii\helpers\Html;
 </style>
 
 <div class="home-card">
-    <h1>🚀 Yii2 + Keycloak Demo</h1>
+    <h1>🚀 Yii2 + TCEB SSO Demo</h1>
     <p>
         This is your application's home page.<br>
         To customize this page, edit the file below:

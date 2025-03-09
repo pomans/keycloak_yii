@@ -8,7 +8,7 @@ use yii\helpers\Html;
         background: rgba(255, 255, 255, 0.2);
         border-radius: 16px;
         padding: 40px;
-        width: 400px;
+        width:500px;
         text-align: center;
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
         color: white;
