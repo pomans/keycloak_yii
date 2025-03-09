@@ -11,4 +11,5 @@ use yii\helpers\Html;
     <p><strong>Full Name:</strong> <?= Html::encode($user['fullname']) ?></p>
     <p><strong>Email:</strong> <?= Html::encode($user['email']) ?></p>
     <?= Html::a('Logout', ['site/logout'], ['class' => 'btn btn-danger']) ?>
+    <?= Html::a('Profile', ['site/profile'], ['target'=>'_blank','class' => 'btn btn-primary']) ?>
 </div>

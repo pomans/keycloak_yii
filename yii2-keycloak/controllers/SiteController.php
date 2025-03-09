@@ -50,6 +50,11 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionProfile() {
+        $profileUrl = 'https://sso.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc/account';
+        return $this->redirect($profileUrl);
+    }
+
     public function actionLogout()
     {
         $user = Yii::$app->session->get('user');
