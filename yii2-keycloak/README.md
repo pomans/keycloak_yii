@@ -9,7 +9,8 @@
 Yii 2 Basic Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
 rapidly creating small projects.
 
-Run Test 
+RUN TEST
+-------------------
 php yii serve --port=8082 --docroot=@app/web
 
 
