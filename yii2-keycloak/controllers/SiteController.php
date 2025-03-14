@@ -51,7 +51,7 @@ class SiteController extends Controller
     }
 
     public function actionProfile() {
-        $profileUrl = 'https://sso.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc/account';
+        $profileUrl = 'https://sso-portal.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc/account';
         return $this->redirect($profileUrl);
     }
 
@@ -69,7 +69,7 @@ class SiteController extends Controller
         $user = Yii::$app->session->get('user');
         Yii::$app->session->remove('user');
         //return $this->redirect(['site/login']);
-        $keycloakLogoutUrl = 'https://sso.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc/protocol/openid-connect/logout';
+        $keycloakLogoutUrl = 'https://sso-portal.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc/protocol/openid-connect/logout';
 
         // URL ที่จะ Redirect กลับมาหลัง Logout เสร็จ (สำคัญมาก ต้องตรงกับที่ตั้งใน Keycloak)
         $redirectUri = urlencode('https://friendly-space-robot-9q5qr9xp5527gpx-8082.app.github.dev/index.php?r=site/login');

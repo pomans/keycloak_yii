@@ -46,7 +46,7 @@ return [
             'clients' => [
                 'tceb-sso' => [
                     'class' => 'yii\authclient\OpenIdConnect',
-                    'issuerUrl' => 'https://sso.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc',
+                    'issuerUrl' => 'https://sso-portal.tceb.or.th/realms/ab072973-334b-45e9-91f8-9bd6b1f060fc',
                     'clientId' => 'yii-client',
                     'clientSecret' => 'gAn4YaoKnlaZ6ZAmLkfllFFwml4qy9N9',
                     'name' => 'tceb-sso',
